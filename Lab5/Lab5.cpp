@@ -243,7 +243,7 @@ private:
 	string buttonText;
 public:
 	WindowWithButton() : window() {
-		buttonText = "No Button";
+		buttonText = "Button without text";
 	}
 	WindowWithButton(string c, float w, float h, string bt) : window(c, w, h) {
 		buttonText = bt;
