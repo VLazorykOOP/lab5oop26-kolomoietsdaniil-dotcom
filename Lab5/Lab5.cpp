@@ -32,7 +32,7 @@ public:
 		this->weight = weight;
 	}
 
-	~human() {
+	 virtual ~human() {
 		cout << "Викликано деструктор для: " << name << " " << surname << " " << patronymic << endl;
 	}
 
@@ -101,7 +101,7 @@ public:
 		course = c;
 	}
 
-	~student() {
+	virtual ~student() {
 		cout << "Викликано деструктор для студента курсу: " << course << endl;
 	}
 
@@ -188,7 +188,7 @@ public:
 	float area() {
 		return width * height;
 	}
-	~window() {
+	 virtual ~window() {
 		cout << "Викликано деструктор для вікна площею: " << area() << endl;
 	}
 
